@@ -1,0 +1,85 @@
+
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Order Management</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-color: #f0f0f0;
+ }
+ .container {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+ }
+ h2, h3 {
+ text-align: center;
+ color: #333;
+ }
+ form {
+ margin-bottom: 20px;
+ }
+ input[type="text"],
+ input[type="number"] {
+ width: 100%;
+ padding: 10px;
+ margin: 8px 0;
+ border-radius: 5px;
+ border: 1px solid #ccc;
+ }
+ button {
+ width: 100%;
+ padding: 10px;
+ margin: 10px 0;
+ border: none;
+ border-radius: 5px;
+ background-color: palegreen;
+ color: black;
+ cursor: pointer;
+ font-weight: bold;
+ font-size: 15px;
+ }
+ button:hover {
+ background-color: #45a049;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h2>Order Management</h2>
+
+ <!-- Insert Form -->
+ <form method="post" action="insert.html">
+
+ <h3>Add Order</h3>
+ <input type="text" placeholder="Name of the Product" required>
+ <input type="text" placeholder="Brand name" required>
+ <input type="number" placeholder="Quantity" required>
+ <button type="submit">Add Order</button>
+ </form>
+ <!-- Update Form -->
+ <form method="post" action="update.html">
+ <h3>Update Order</h3>
+ <input type="text" placeholder="Order name to Update" required>
+ <input type="text" placeholder="New Product Name">
+ <input type="number" placeholder="New Quantity">
+ <button type="submit">Update Order</button>
+ </form>
+ <!-- Delete Form -->
+ <form method="post" action="delete.html">
+ <h3>Delete Order</h3>
+ <input type="text" placeholder="Order name to Delete" required>
+ <button type="submit">Delete Order</button>
+ </form>
+ </div>
+</body>
+</html>

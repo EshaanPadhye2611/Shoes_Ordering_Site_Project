@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title> Confirm to Delete Your Order</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+form {
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+h1 {
+color: #333;
+}
+b {
+display: block;
+margin: 10px 0;
+font-weight: bold;
+}
+input[type="text"] {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+input[type="submit"] {
+background-color: palegreen;
+color: black;
+cursor: pointer;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+font-size: 16px;
+font-weight: bold;
+}
+input[type="submit"]:hover {
+background-color: #45a049;
+}
+</style>
+</head>
+<body>
+<form method="post" action="delete.jsp">
+<h1> Confirm to Delete Your Order</h1>
+<b>Enter the name of the Product that you want to
+remove</b>
+<input type="text" name="a" value="" size="10">
+<br><br>
+<input type="submit" value=" Confirm to your Delete Order">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
